@@ -1,0 +1,88 @@
+# ACMG SF v3.3 (Lee K et al. Genet Med 2025;27(8):101454, doi:10.1016/j.gim.2025.101454), 84 genes
+# report: all = 任一 P/LP 即报告；biallelic = 仅两个 P/LP（纯合 / 复合杂合）才作为次要发现，单个杂合归入携带者；
+#         HFE = 仅 p.C282Y 纯合；TTN = 仅截短变异（ACMG 惯例）；HNF1A 按 AD（Ambry 传单标为双等位，疑为笔误）
+gene	category	condition	report
+APC	cancer	Familial adenomatous polyposis	all
+BMPR1A	cancer	Juvenile polyposis syndrome	all
+BRCA1	cancer	Hereditary breast and ovarian cancer	all
+BRCA2	cancer	Hereditary breast and ovarian cancer	all
+MAX	cancer	Hereditary paraganglioma-pheochromocytoma	all
+MEN1	cancer	Multiple endocrine neoplasia type 1	all
+MLH1	cancer	Lynch syndrome	all
+MSH2	cancer	Lynch syndrome	all
+MSH6	cancer	Lynch syndrome	all
+MUTYH	cancer	MUTYH-associated polyposis	biallelic
+NF2	cancer	Neurofibromatosis type 2	all
+PALB2	cancer	Hereditary breast and ovarian cancer	all
+PMS2	cancer	Lynch syndrome	all
+PTEN	cancer	PTEN hamartoma tumor syndrome	all
+RB1	cancer	Retinoblastoma	all
+RET	cancer	MEN2 / familial medullary thyroid cancer	all
+SDHAF2	cancer	Hereditary paraganglioma-pheochromocytoma	all
+SDHB	cancer	Hereditary paraganglioma-pheochromocytoma	all
+SDHC	cancer	Hereditary paraganglioma-pheochromocytoma	all
+SDHD	cancer	Hereditary paraganglioma-pheochromocytoma	all
+SMAD4	cancer	Juvenile polyposis syndrome	all
+STK11	cancer	Peutz-Jeghers syndrome	all
+TMEM127	cancer	Hereditary paraganglioma-pheochromocytoma	all
+TP53	cancer	Li-Fraumeni syndrome	all
+TSC1	cancer	Tuberous sclerosis complex	all
+TSC2	cancer	Tuberous sclerosis complex	all
+VHL	cancer	von Hippel-Lindau syndrome	all
+WT1	cancer	WT1-related Wilms tumor	all
+ACTA2	cardio	Thoracic aortic aneurysm and dissection	all
+ACTC1	cardio	Cardiomyopathy	all
+APOB	cardio	Familial hypercholesterolemia	all
+BAG3	cardio	Cardiomyopathy	all
+CALM1	cardio	Long QT syndrome	all
+CALM2	cardio	Long QT syndrome / CPVT	all
+CALM3	cardio	Long QT syndrome / CPVT	all
+CASQ2	cardio	CPVT	biallelic
+COL3A1	cardio	Ehlers-Danlos syndrome, vascular type	all
+DES	cardio	Cardiomyopathy	all
+DSC2	cardio	ARVC	all
+DSG2	cardio	ARVC	all
+DSP	cardio	ARVC	all
+FBN1	cardio	Marfan syndrome	all
+FLNC	cardio	Cardiomyopathy	all
+KCNH2	cardio	Long QT syndrome	all
+KCNQ1	cardio	Long QT syndrome	all
+LDLR	cardio	Familial hypercholesterolemia	all
+LMNA	cardio	Cardiomyopathy	all
+MYBPC3	cardio	Cardiomyopathy	all
+MYH11	cardio	Thoracic aortic aneurysm and dissection	all
+MYH7	cardio	Cardiomyopathy	all
+MYL2	cardio	Cardiomyopathy	all
+MYL3	cardio	Cardiomyopathy	all
+PCSK9	cardio	Familial hypercholesterolemia	all
+PKP2	cardio	ARVC	all
+PLN	cardio	ARVC / DCM / HCM	all
+PRKAG2	cardio	Cardiomyopathy	all
+RBM20	cardio	Cardiomyopathy	all
+RYR2	cardio	CPVT	all
+SCN5A	cardio	Long QT syndrome / Brugada syndrome	all
+SMAD3	cardio	Loeys-Dietz syndrome	all
+TGFBR1	cardio	Loeys-Dietz syndrome	all
+TGFBR2	cardio	Loeys-Dietz syndrome	all
+TMEM43	cardio	ARVC	all
+TNNC1	cardio	Cardiomyopathy	all
+TNNI3	cardio	Cardiomyopathy	all
+TNNT2	cardio	Cardiomyopathy	all
+TPM1	cardio	Cardiomyopathy	all
+TRDN	cardio	CPVT	biallelic
+TTN	cardio	Cardiomyopathy	TTN
+ABCD1	metabolic	X-linked adrenoleukodystrophy	all
+BTD	metabolic	Biotinidase deficiency	biallelic
+CYP27A1	metabolic	Cerebrotendinous xanthomatosis	biallelic
+GAA	metabolic	Pompe disease	biallelic
+GLA	metabolic	Fabry disease	all
+OTC	metabolic	Ornithine transcarbamylase deficiency	all
+ACVRL1	other	Hereditary hemorrhagic telangiectasia	all
+CACNA1S	other	Malignant hyperthermia susceptibility	all
+ATP7B	other	Wilson disease	biallelic
+ENG	other	Hereditary hemorrhagic telangiectasia	all
+HFE	other	Hereditary hemochromatosis	HFE
+HNF1A	other	Maturity-onset diabetes of the young	all
+RPE65	other	RPE65-related retinopathy	biallelic
+RYR1	other	Malignant hyperthermia susceptibility	all
+TTR	other	Hereditary transthyretin amyloidosis	all

@@ -1,0 +1,242 @@
+{
+ "_说明": "扩展分析里和人群有关的参数（POP=EAS 时使用）。其他人群照这个格式另写一份 assets/population/<POP>.json：参考组、对照组、古 DNA 地区与外群、qpAdm 模型都要按该人群的遗传历史重新选。",
+ "pop_names": {
+  "CHB": "北方汉族 · 北京",
+  "CHS": "南方汉族 · 湖南/福建",
+  "CDX": "傣族 · 西双版纳",
+  "KHV": "京族 · 胡志明市",
+  "JPT": "日本人 · 东京"
+ },
+ "lai": {
+  "_说明": "局部祖源（RFMix）：把每段染色体判成某个参考组。参考组各留 holdout 人不进参考，和 controls 一起当对照，检验这把尺子准不准。",
+  "ref": {
+   "North": [
+    "CHB"
+   ],
+   "South": [
+    "CDX",
+    "KHV"
+   ]
+  },
+  "labels": {
+   "North": "北方东亚型（参考：北京汉族 CHB）",
+   "South": "南方东亚型（参考：傣族 CDX + 京族 KHV）"
+  },
+  "controls": [
+   "CHB",
+   "CDX",
+   "KHV",
+   "CHS",
+   "JPT"
+  ],
+  "holdout": 10,
+  "generations": 20
+ },
+ "controls": {
+  "_说明": "古人类片段（hmmix）的对照：每个人群随机挑 per_pop 人，跑和样本完全相同的流程",
+  "pops": [
+   "CHB",
+   "CHS",
+   "JPT",
+   "KHV",
+   "CDX"
+  ],
+  "per_pop": 8
+ },
+ "aadr": {
+  "_说明": "古 DNA（AADR 1240K）：挑哪些国家 / 地区的古今个体，加哪些外群；PCA 用 modern_pops 定轴，其余投影",
+  "countries": [
+   "China",
+   "Mongolia",
+   "Japan",
+   "Taiwan",
+   "Vietnam",
+   "Thailand",
+   "Laos",
+   "Cambodia",
+   "Myanmar",
+   "Malaysia",
+   "Philippines",
+   "Indonesia",
+   "Russia",
+   "Nepal",
+   "Kazakhstan",
+   "Kyrgyzstan",
+   "India"
+  ],
+  "outgroups": [
+   "Mbuti",
+   "Yoruba",
+   "Papuan",
+   "ONG",
+   "Chimp",
+   "Altai_Neanderthal",
+   "VindijaCave_Neanderthal",
+   "Russia_Denisova",
+   "Russia_UstIshim_UP",
+   "Russia_Kostenki_UP",
+   "China_TianyuanCave_UP",
+   "Russia_MA1_UP",
+   "Iran_GanjDareh_N",
+   "Turkey_N",
+   "Russia_Siberia_UP",
+   "Israel_Natufian",
+   "Mixe",
+   "Karitiana",
+   "French",
+   "Sardinian",
+   "Australian",
+   "Dinka",
+   "Han",
+   "Ami",
+   "Atayal"
+  ],
+  "f3_outgroup": "Mbuti",
+  "modern_pops": [
+   "Ami",
+   "Atayal",
+   "Burmese",
+   "Cambodian",
+   "CDX",
+   "CHB",
+   "China_Lahu",
+   "CHS",
+   "Dai",
+   "Daur",
+   "Han",
+   "Hezhen",
+   "Japanese",
+   "JPT",
+   "KHV",
+   "Kinh_Vietnamese",
+   "Miao",
+   "Mongola",
+   "Naxi",
+   "Oroqen",
+   "She",
+   "Thai",
+   "Tu",
+   "Tujia",
+   "Ulchi",
+   "Xibo",
+   "Yi"
+  ],
+  "map": {
+   "lon": [
+    68,
+    150
+   ],
+   "lat": [
+    -5,
+    62
+   ]
+  },
+  "qpadm": {
+   "_说明": "qpAdm：把样本建模成 left 来源人群的混合；pools 把同一来源的多个遗址合并；right 是外群（base / ext 两套，结论应一致）",
+   "pools": {
+    "YR_LN": [
+     "China_Henan_Pingliangtaisite_LN",
+     "China_Henan_Haojiatai_LN",
+     "China_Henan_Wadiansite_LN",
+     "Henan_Wadian",
+     "China_Henan_Wadian_LN",
+     "China_Shanxi_Shengedaliang_LN"
+    ],
+    "SD_LN": [
+     "China_Shandong_Dinggong_LN",
+     "China_Shandong_Chengziya_Longshan",
+     "China_Jining_YinJiaCheng_Longshan"
+    ],
+    "YR_MN": [
+     "China_Henan_Wanggousite_MN",
+     "China_Henan_Xiaowusite_MN"
+    ],
+    "SEC_LN": [
+     "China_Fujian_Tanshishan_LN",
+     "China_Fujian_Xitoucun_LN",
+     "China_Penghu_Suogang_LN"
+    ],
+    "Hanben_IA": [
+     "Taiwan_IA"
+    ],
+    "Amur_N": [
+     "China_AmurRiverBasin_N",
+     "Russia_PrimorskyKrai_AmurRiver_N"
+    ]
+   },
+   "pool_names": {
+    "YR_LN": "黄河中游新石器晚期农人（河南/山西龙山时代）",
+    "SD_LN": "山东龙山文化人群",
+    "SEC_LN": "东南沿海新石器晚期（福建昙石山/溪头、澎湖）",
+    "Hanben_IA": "台湾汉本铁器时代人群（南岛语族祖先相关）",
+    "YR_MN": "黄河中游仰韶文化人群",
+    "Amur_N": "黑龙江流域新石器人群"
+   },
+   "right_base": [
+    "Mbuti",
+    "Russia_UstIshim_IUP",
+    "Russia_Kostenki_UP",
+    "Papuan",
+    "ONG",
+    "China_TianyuanCave_UP",
+    "Iran_GanjDareh_N",
+    "Japan_Honshu_EarlyJomon",
+    "Amur_N",
+    "Mongolia_N"
+   ],
+   "right_ext_add": [
+    "China_Shandong_BoshanMountain_EN",
+    "China_Shandong_Bianbian_EN",
+    "China_Fujian_Qihedong_EN",
+    "China_Fujian_QiheCave_Epipaleolithic",
+    "China_Guangxi_BaojianshanCaveA_N"
+   ],
+   "compare_targets": [
+    "CHB",
+    "CHS",
+    "Han",
+    "She",
+    "Tujia",
+    "CDX",
+    "JPT"
+   ],
+   "models": [
+    [
+     "YR_LN"
+    ],
+    [
+     "SD_LN"
+    ],
+    [
+     "YR_LN",
+     "SEC_LN"
+    ],
+    [
+     "YR_LN",
+     "Hanben_IA"
+    ],
+    [
+     "SD_LN",
+     "SEC_LN"
+    ],
+    [
+     "SD_LN",
+     "Hanben_IA"
+    ],
+    [
+     "YR_MN",
+     "Hanben_IA"
+    ],
+    [
+     "YR_LN",
+     "Hanben_IA",
+     "Amur_N"
+    ]
+   ],
+   "main_model": [
+    "YR_LN",
+    "Hanben_IA"
+   ]
+  }
+ }
+}
